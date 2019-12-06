@@ -144,25 +144,15 @@ header nav a {
 	border-bottom: 1px dashed black;
 }
 
-/*
-.about-text-container-bottom {
-	width: 40%;
-	padding: 10px 0px;
-	margin: 20px 20px;
-	border: none;
-} */
-
-.about-middle-content img {
-	margin: 40px 0 20px 0;
-}
-
 .about-middle-content {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
 	justify-content: space-evenly;
-	/* margin: 10px; */
-	/* border-bottom: 1px dashed black; */
+}
+
+.about-middle-content img {
+	margin: 40px 0 20px 0;
 }
 
 .middle-content {
@@ -225,6 +215,7 @@ header nav a {
 }
 /* end colorful box section------------------------------*/
 
+
 button {
 	width: 40%;
 	border-radius: 12px;
@@ -233,10 +224,6 @@ button {
 	padding: 10px 2px;
 	margin: 20px 0;
 	font-size: 16px;
-}
-
-form {
-
 }
 
 input {
@@ -248,8 +235,7 @@ input:hover {
 }
 
 input[type=textarea] {
-	background-color: skyblue;
-	color: white;
+	background-color: #fdfaf0;
 	width: 300px;
 }
 
@@ -269,6 +255,49 @@ input[type=textarea] {
 	margin: 20px 2% 20px 2%;
 	justify-content: flex-start;
 }
+
+.contact-bottom-content {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin: 20px 2% 20px;
+}
+.contact-text-container {
+display: flex;
+flex-direction: column;
+width: 45%;
+}
+
+.contact-text-container a{
+	color: white;
+	text-decoration: none;
+}
+.email-anim {
+	color: black;
+  -webkit-animation-name: email-anim;
+  -webkit-animation-duration: 4s;
+  animation-name: email-anim;
+	animation-direction: alternate;
+  animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes email-anim {
+  from {background-color: red;
+				color: black;}
+  to {background-color: blue;
+		color: white;}
+
+
+/* Standard syntax */
+@keyframes email-anim {
+  from {background-color: red;
+		color: black;}
+  to {background-color: blue;
+		color: white;}
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
