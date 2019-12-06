@@ -274,6 +274,7 @@ width: 45%;
 	color: white;
 	text-decoration: none;
 }
+
 .email-anim {
 	color: black;
   -webkit-animation-name: email-anim;
@@ -284,13 +285,12 @@ width: 45%;
 	animation-iteration-count: infinite;
 }
 
-/* Safari 4.0 - 8.0 */
 @-webkit-keyframes email-anim {
   from {background-color: red;
 				color: black;}
   to {background-color: blue;
 		color: white;}
-
+}
 
 /* Standard syntax */
 @keyframes email-anim {
@@ -298,6 +298,7 @@ width: 45%;
 		color: black;}
   to {background-color: blue;
 		color: white;}
+}
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
