@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,9 +24,9 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+	/* display: block; */
 }
 body {
 	line-height: 1;
@@ -57,7 +57,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -65,36 +65,108 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+/* ------------------------------------------------------ */
+header {
+	display: flex;
+	background: white;
+	position: fixed;
+	height: 100px;
+	width: 100%;
+	margin-right: 10%;
+}
+
+header nav {
+	display: flex;
+	position: fixed;
+  width: 80%;
+  justify-content: space-between;
+	align-items: baseline;
+  padding: 30px 2%;
+	margin: 0 10% 100px 0%;
+}
+
+header img {
+	height: 40px;
+}
+
+header nav a {
+    color: black;
+		font-size: 14px;
+		font-weight: bold;
+    text-decoration: none;
+		/* justify-content: space-between; */
+		/* vertical-align: baseline; */
+}
 
 .container {
-    width: 800px;
-    margin: 0 auto;
+    margin: 0 10%;
+		display: flex;
+		flex-direction: column;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
+		width: 100%;
+		margin: 60px 0 0 0px;
     border-bottom: 1px dashed black;
 }
 
-.top-content .text-container {
-    width: 48%;
+.top-content img {
+	width:100%;
+	margin: 18px 0;
+}
+
+.text-container {
+    width: 45%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+}
+
+.wide-text-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: flex-start;
+  padding: 0 1%;
+  padding-bottom: 10px;
+	margin: 0px 2%;
+}
+
+.about-text-container {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	/* padding: 8% 0 0 0; */
+	margin-bottom: 20px;
+	border-bottom: 1px dashed black;
+}
+
+.about-middle-content {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.about-middle-content img {
+	margin: 40px 0 20px 0;
 }
 
 .middle-content {
-    margin-bottom: 20px;
+	width: 100%;
+    margin-bottom: 10px;
+		margin-top: 15px;
     border-bottom: 1px dashed black;
 }
 
 .middle-content h2 {
-    padding: 0 2%;
+    padding: 10px 2% 0;
     margin-bottom: 0;
 }
-
+/*homepage colorful box section---------------------*/
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -104,7 +176,6 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -112,14 +183,121 @@ p {
     justify-content: center;
 }
 
+.box1 {
+	background: teal;
+}
+.box2 {
+	background: gold;
+}
+.box3 {
+	background: cadetblue;
+}
+.box4 {
+	background: coral;
+}
+.box5 {
+	background: crimson;
+}
+.box6 {
+	background: forestgreen;
+}
+.box7 {
+	background: darkorchid;
+}
+.box8 {
+	background: hotpink;
+}
+.box9 {
+	background: indigo;
+}
+.box10 {
+	background: dodgerblue;
+}
+/* end colorful box section------------------------------*/
+
+
+button {
+	width: 40%;
+	border-radius: 12px;
+	border: 2px solid black;
+	background: white;
+	padding: 10px 2px;
+	margin: 20px 0;
+	font-size: 16px;
+}
+
+input {
+	margin:5px;
+}
+
+input:hover {
+	border: 1px solid orange;
+}
+
+input[type=textarea] {
+	background-color: #fdfaf0;
+	width: 300px;
+}
+
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2%;
     justify-content: space-around;
 }
 
 .bottom-content .text-container {
     padding-right: 4%;
+}
+
+.about-bottom-content {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px 2% 20px 2%;
+	justify-content: flex-start;
+}
+
+.contact-bottom-content {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin: 20px 2% 20px;
+}
+.contact-text-container {
+display: flex;
+flex-direction: column;
+width: 45%;
+}
+
+.contact-text-container a{
+	color: white;
+	text-decoration: none;
+}
+
+.email-anim {
+	color: black;
+  -webkit-animation-name: email-anim;
+  -webkit-animation-duration: 4s;
+  animation-name: email-anim;
+	animation-direction: alternate;
+  animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes email-anim {
+  from {background-color: red;
+				color: black;}
+  to {background-color: blue;
+		color: white;}
+}
+
+/* Standard syntax */
+@keyframes email-anim {
+  from {background-color: red;
+		color: black;}
+  to {background-color: blue;
+		color: white;}
 }
 
 .bottom-content .text-container:last-child {
@@ -129,6 +307,7 @@ p {
 footer {
     width: 100%;
     background: black;
+		margin-top: 10px;
 }
 
 footer nav {

@@ -1,0 +1,18 @@
+1. If you were to describe semantic HTML to the next cohort of students, what would you say?
+	If a website were a body, the semantic HTML is the skeleton. It only includes the major parts necessary for a site,
+	like <p> and <header>.
+	 
+
+2. Name two big differences between display: block; and display: inline;.
+	Display: block will take each element and make its own row. Display: inline fits into the middle of things. 
+	Like <p> versus <span>.
+
+3. What are the 4 areas of the box model?
+	Content, Padding, Border, Margin
+
+4. While using flexbox, what axis does the following property work on: align-items: center?
+	Align-items moves things vertically.
+
+5. Explain why git is valuable to a team of developers.
+	Everyone can work on the same project at once and share their changes without altering the original
+	version.
